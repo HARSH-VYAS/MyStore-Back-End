@@ -4,8 +4,8 @@
   "description": "## Getting Started",
   "main": "server.ts",
   "scripts": {
-    "lint": "eslint 'src/server.js'",
-    "prettier": "prettier --config .prettierrc 'src/**/*.js' --write",
+    "lint": "npm run build && eslint 'src/**/*.ts'",
+    "prettier": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "build": "npx tsc",
     "jasmine": "jasmine",
     "test": "npm run build && npm run jasmine",
@@ -54,8 +54,5 @@
     "sharp": "^0.33.5",
     "supertest": "^7.0.0"
   },
-
-
-
   "homepage": "https://github.com/HARSH-VYAS/MyStore-Back-End#readme"
 }
